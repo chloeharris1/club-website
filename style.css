@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background: #fdfff5;
+}
+
+a {
+    text-decoration: none;
+    color: #ffa600;
+}
+
+a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+.jumbotron {
+    border: 2px solid blue;
+}
+
+.header {
+    border: 2px solid green;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-list li {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+
+/* Main Content */
+
+.main {
+    border: 2px solid yellow;
+}
