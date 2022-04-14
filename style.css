@@ -11,6 +11,7 @@ html {
 
 body {
     background: #fdfff5;
+    height: 100%;
 }
 
 a {
@@ -22,19 +23,47 @@ a:hover {
     color: black;
 }
 
+p {
+    line-height: 1.6rem;
+}
+
 .container {
     display: flex;
-    height: auto;
     flex-direction: column;
     border: 2px solid red;
 }
 
+
+/* Header */
+
 .jumbotron {
     border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    /* Background Image */
+    background-image: url(./images/creamery.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: flex-start;
+    height: 35rem;
 }
 
 .header {
     border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 2.5rem;
+    position: fixed;
+}
+
+.header h1 {
+    padding-bottom: 1.5rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .nav-list {
@@ -55,4 +84,77 @@ a:hover {
 
 .main {
     border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+
+/* About Section */
+
+.about {
+    border: 2px solid hotpink;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Images */
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.images img {
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+
+/* Benefits Section*/
+
+.benefits {
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+img {
+    height: 4rem;
+    width: 4rem;
+    flex-shrink: 1;
+}
+
+
+/* Community Section */
+
+.community {
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
