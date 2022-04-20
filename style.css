@@ -151,6 +151,15 @@ span {
     }
 }
 
+
+/* Styles for tablets */
+
+@media only screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.7rem;
+    }
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -213,9 +222,32 @@ img {
     span {
         font-size: 1.2rem;
     }
+    /* Reducing image size for mobile */
     img {
         height: 7rem;
         width: 7rem;
+    }
+}
+
+
+/* Styles for tablets */
+
+@media only screen and (max-width: 768px) {
+    .club {
+        height: 70vh;
+        /* Adjusting padding */
+        padding: 1rem 0 1rem;
+        /* Aligning illustration with second paragraph */
+        align-items: center;
+    }
+    /* Adjusted height of the container so it can be aligned with paragraph content */
+    .illustration {
+        height: 25%;
+    }
+    /* Reducing image size */
+    img {
+        height: 10rem;
+        width: 10rem;
     }
 }
 
@@ -257,6 +289,16 @@ img {
     /* Reducing font size */
     .section-header h3 {
         font-size: 1.2rem;
+    }
+}
+
+
+/* Styles for tablets */
+
+@media only screen and (max-width: 768px) {
+    /* Increasing line height so text is easier to read */
+    .section-header {
+        line-height: 1.6;
     }
 }
 
@@ -349,6 +391,23 @@ img {
     #appel {
         width: 75%;
         margin: 0 auto;
+    }
+}
+
+
+/* Styles for tablets */
+
+@media only screen and (max-width: 768px) {
+    .partners {
+        flex-wrap: wrap;
+    }
+    .logos {
+        height: 75%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #appel {
+        width: 95%;
     }
 }
 
