@@ -205,7 +205,9 @@ img {
     }
     .about {
         height: 100%;
+        /* Reducing font size */
         font-size: 0.875rem;
+        /* Removing gap between paragraphs */
         gap: 0rem;
     }
     span {
@@ -244,8 +246,17 @@ img {
 /* Reducing padding */
 
 @media only screen and (max-width: 480px) {
+    /* Reducing padding */
     .gallery {
         padding: 1.5rem 1rem;
+    }
+    /* Increasing line height so text is easier to read */
+    .section-header {
+        line-height: 1.6;
+    }
+    /* Reducing font size */
+    .section-header h3 {
+        font-size: 1.2rem;
     }
 }
 
@@ -303,6 +314,7 @@ img {
 
 .logos {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -310,12 +322,33 @@ img {
 /* Styles for Mobile Devices */
 
 @media only screen and (max-width: 480px) {
-    /* Reducing section header font size */
-    .section-header p {
+    /* Reducing font size */
+    .partners p {
         font-size: 2rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
     }
     .partners {
+        /* Changing flex direction so items display next to eachother */
+        flex-direction: row;
+        /* Reducing gap between logos */
         gap: 1rem;
+    }
+    /* Aliging partner logos so they stack on top of eachother */
+    .logos {
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+    }
+    /* Reducing logo size for mobile */
+    .partners img {
+        width: 75%;
+        height: auto;
+    }
+    /* Sized the appel farms logo separately to match better with other logos */
+    #appel {
+        width: 75%;
+        margin: 0 auto;
     }
 }
 
