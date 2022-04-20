@@ -87,6 +87,7 @@ span {
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5rem;
     text-align: center;
+    flex-shrink: 1;
 }
 
 .nav-list {
@@ -102,6 +103,18 @@ span {
 .nav-list li {
     flex-grow: 0;
     flex-shrink: 1;
+}
+
+
+/* Styles for Mobile Devices */
+
+@media only screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 1.1rem;
+    }
+    .nav-list li {
+        font-size: 0.7rem;
+    }
 }
 
 
@@ -125,12 +138,28 @@ span {
     color: #fdfff5;
 }
 
+
+/* Styles for Mobile Devices */
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        height: 35vh;
+    }
+    .banner h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
 .main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 7rem;
 }
+
+
+/* 5. Club Info Section */
 
 .club {
     display: flex;
@@ -144,9 +173,6 @@ span {
     background-color: #fdfff5;
 }
 
-
-/* 5. Club Info Section */
-
 .about {
     display: flex;
     flex-direction: row;
@@ -154,8 +180,8 @@ span {
     max-height: 100%;
     width: 60%;
     gap: 1.5rem;
-    border-radius: 0.5rem;
     text-align: flex-start;
+    flex-shrink: 1;
 }
 
 img {
@@ -166,6 +192,29 @@ img {
 
 .about a {
     color: black;
+}
+
+
+/* Styles for Mobile Devices */
+
+@media only screen and (max-width: 480px) {
+    .club {
+        flex-direction: column;
+        height: 80vh;
+        padding: 2rem 0 1rem;
+    }
+    .about {
+        height: 100%;
+        font-size: 0.875rem;
+        gap: 0rem;
+    }
+    span {
+        font-size: 1.2rem;
+    }
+    img {
+        height: 7rem;
+        width: 7rem;
+    }
 }
 
 
@@ -184,7 +233,20 @@ img {
 .gallery img {
     width: 17rem;
     height: auto;
+    flex-shrink: 1;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/* Styles for Mobile Devices */
+
+
+/* Reducing padding */
+
+@media only screen and (max-width: 480px) {
+    .gallery {
+        padding: 1.5rem 1rem;
+    }
 }
 
 
@@ -244,8 +306,17 @@ img {
     align-items: center;
 }
 
-.logos img {
-    flex-shrink: 1;
+
+/* Styles for Mobile Devices */
+
+@media only screen and (max-width: 480px) {
+    /* Reducing section header font size */
+    .section-header p {
+        font-size: 2rem;
+    }
+    .partners {
+        gap: 1rem;
+    }
 }
 
 
@@ -258,4 +329,13 @@ footer {
     padding: 0.75%;
     background-color: #736357;
     color: #fdfff5;
+}
+
+
+/* Reducing font size */
+
+@media only screen and (max-width: 480px) {
+    footer {
+        font-size: 0.75rem;
+    }
 }
