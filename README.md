@@ -1,4 +1,4 @@
-# Responsive Club Website
+# Club Website
 
 A Codecademy project in the Front-End-Engineer career path. 
 
@@ -7,18 +7,16 @@ A club group page that will dynamically respond as you adjust the size of your s
 
 ## Snapshot
 
+![snapshot](./snapshots/desktop.png)
+
 ## Link 
 
 ## Credits
 
 Cheese Favicon from [Luvdat](https://www.flaticon.com/authors/luvdat)
 
-Icons from flaticon:
-[Darius Dan](https://www.flaticon.com/authors/darius-dan)
-
-[iconixar](https://www.flaticon.com/authors/iconixar)
-
-[Nhor Pahi](https://www.flaticon.com/authors/nhor-phai)
+Cheese Sketch:
+[gstudioimagen](https://www.vecteezy.com/members/gstudioimagen)
 
 Images from: 
 

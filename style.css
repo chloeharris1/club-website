@@ -1,3 +1,16 @@
+/* 1. Universal Styles
+   2. Main Page Container
+   3. Header
+   4. Main Content
+   5. Club Info Section
+   6. Club Photo Gallery
+   7. Industry Partners 
+   8. Footer
+*/
+
+
+/* 1. Universal Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +49,9 @@ span {
     font-weight: 800;
 }
 
+
+/* 2. Main Page Container */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -48,7 +64,7 @@ span {
 }
 
 
-/* Header */
+/* 3. Header */
 
 .header {
     display: flex;
@@ -89,7 +105,7 @@ span {
 }
 
 
-/* Main Content */
+/* 4. Main Content */
 
 .banner {
     display: flex;
@@ -129,10 +145,9 @@ span {
 }
 
 
-/* About Section */
+/* 5. Club Info Section */
 
 .about {
-    /* border: 2px solid hotpink; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,36 +159,36 @@ span {
 }
 
 img {
-    height: 4rem;
-    width: 4rem;
+    height: 15rem;
+    width: 15rem;
     flex-shrink: 1;
 }
 
-
-/* Images */
-
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 2% 0;
-    padding: 2rem;
-    justify-content: space-evenly;
-    /* border: 2px solid blue; */
-    /* Background */
-    background-color: #fdfff5;
-    z-index: 1;
+.about a {
+    color: black;
 }
 
-.images img {
+
+/* 6. Club Photo Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2% 0;
+    padding: 3rem;
+    justify-content: space-evenly;
+    background-color: #fdfff5;
+}
+
+.gallery img {
     width: 17rem;
     height: auto;
-    border-radius: 0.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
-/* Community Section */
+/* 7. Industry Partners Section */
 
 .community {
     display: flex;
@@ -197,8 +212,11 @@ img {
     padding: 1rem;
 }
 
-
-/* Partners Section */
+.section-header p {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
 
 .partners {
     display: flex;
@@ -221,8 +239,17 @@ img {
     height: 50%
 }
 
+.logos {
+    display: flex;
+    align-items: center;
+}
 
-/* Footer */
+.logos img {
+    flex-shrink: 1;
+}
+
+
+/* 8. Footer */
 
 footer {
     display: flex;
