@@ -157,6 +157,7 @@ span {
 @media only screen and (max-width: 768px) {
     .banner h1 {
         font-size: 2.7rem;
+        text-align: center;
     }
 }
 
@@ -239,6 +240,10 @@ img {
         padding: 1rem 0 1rem;
         /* Aligning illustration with second paragraph */
         align-items: center;
+    }
+    .about {
+        /* Adjusting padding*/
+        padding: 1.5rem 0 1rem;
     }
     /* Adjusted height of the container so it can be aligned with paragraph content */
     .illustration {
@@ -400,6 +405,10 @@ img {
 @media only screen and (max-width: 768px) {
     .partners {
         flex-wrap: wrap;
+    }
+    /* Adding padding to top to increase whitespace */
+    .partners p {
+        padding-top: 1rem;
     }
     .logos {
         height: 75%;

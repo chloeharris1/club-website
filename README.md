@@ -11,6 +11,8 @@ A club group page that will dynamically respond as you adjust the size of your s
 
 ## Link 
 
+https://chloeharris1.github.io/club-website/
+
 ## Credits
 
 Cheese Favicon from [Luvdat](https://www.flaticon.com/authors/luvdat)
